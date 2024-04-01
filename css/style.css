@@ -1,0 +1,62 @@
+:root {
+    --color-link: #015705;
+}
+    
+/* base */
+body {
+    background: linear-gradient(70deg, rgb(86, 223, 116), rgb(255, 255, 255));
+    font-family: "Raleway", "sans-serif";
+}
+
+main {
+    text-align: center;
+}
+
+/* title */
+.hero_title {
+    text-align: center;
+}
+
+/* information */
+.main_information {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* images */
+.images {
+    width: 240px;
+    border-radius: 30px;
+}
+
+/* links */
+.nav_links {
+    text-decoration: none;
+    width: 600px;
+    color: var(--color-link);
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  /* navigation section */
+
+  nav{
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    text-align: right
+  }
+
+  .block {
+    width: 25%;
+    margin: 1%;
+  }
+
+  .link {
+    font-size: 15px;
+  }
