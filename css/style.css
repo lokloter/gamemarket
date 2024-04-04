@@ -21,6 +21,8 @@ main {
 .main_information {
     display: flex;
     flex-wrap: wrap;
+    background-color: antiquewhite;
+    width: 70%;
 }
 
 /* images */
@@ -57,6 +59,24 @@ ul {
     margin: 1%;
   }
 
+  .block2 {
+    background-color: azure;
+    border-radius: 30px;
+    border: 2px solid #666;
+  }
+
   .link {
     font-size: 15px;
+  }
+
+  .game_link {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 100px;
+  }
+
+  .game_link:hover {
+    background-color: #015705;
+    border-radius: 30px;
+    color: aliceblue;
   }
