@@ -26,7 +26,6 @@ main {
 .main_information {
     display: flex;
     flex-wrap: wrap;
-
     width: 70%;
 }
 
@@ -61,11 +60,29 @@ main {
   border-radius: 30px;
 }
 
-ul {
-    list-style-type: none;
-  }
+  /* class section */
 
+.aclass{
+  width: 15%;
+  float: left;
+  display: flex;
 
+}
+
+.sect_aclass{
+  margin-top: 100px;
+  text-align: left;
+}
+
+.aclass_title{
+  text-align: left;
+}
+
+.aclass_link{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
   /* navigation section */
 
 .div_nav {
@@ -117,4 +134,8 @@ ul {
   .nav_title {
     text-align: center;
     margin-left: 40px;
+  }
+
+  .nav_ul{
+    list-style-type: none;
   }
