@@ -63,7 +63,7 @@ main {
   /* class section */
 
 .aclass{
-  width: 15%;
+  width: 10%;
   float: left;
   display: flex;
 
@@ -82,6 +82,18 @@ main {
   text-decoration: none;
   color: black;
   font-size: 20px;
+}
+
+.sp_aclass1{
+  text-align: left;
+  margin-left: 15px;
+}
+
+.game_link1 {
+  color: black;
+  text-decoration: none;
+  text-align: right;
+  margin-left: 50px;
 }
   /* navigation section */
 
