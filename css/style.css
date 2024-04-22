@@ -4,7 +4,7 @@
     
 /* base */
 body {
-    background: linear-gradient(70deg, rgb(86, 223, 116), rgb(255, 255, 255));
+    background: linear-gradient(to right, blue, green);
     font-family: "Raleway", "sans-serif";
 }
 
@@ -12,6 +12,15 @@ main {
     text-align: center;
 }
 
+.button {
+  text-decoration: none;
+  border-radius: 15%;
+}
+
+.button:hover {
+  background-color: var(--color-link);
+  color: #ffffff;
+}
 
 /* title */
 .hero_title {
@@ -79,7 +88,7 @@ main {
 
 .aclass_link{
   text-decoration: none;
-  color: black;
+  color: var(--color-link);
   font-size: 20px;
 }
 
@@ -89,7 +98,7 @@ main {
 }
 
 .game_link1 {
-  color: black;
+  color: var(--color-link);
   text-decoration: none;
   text-align: right;
   margin-left: 50px;
@@ -108,6 +117,7 @@ main {
   }
 
   .block3 {
+    position: relative;
     height: 17%;
     width: 20%;
     margin: 1%;
@@ -116,14 +126,40 @@ main {
     margin-left: 100px;
     background-color: white;
     text-decoration: none;
-    color: #000000;
+    color: var(--color-link);
     transition:0.3s ease;
   }
 
-  .block3:hover {
+  .back-side {
+    height: 17%;
+    width: 20%;
+    transition:0.3s ease;
+    background-color: white;
+    text-decoration: none;
+    color: var(--color-link);
+    border-radius: 30px;
+    border: 2px solid #666;
+    margin: 1%;
+    }
+
+  .block3 .back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Задайте колір для зворотної сторони секції */
+    backface-visibility: hidden; /* Ховаємо зворотню сторону в браузері */
+    transform: rotateY(180deg); /* Поворот на 180 градусів */
+  }
+
+  .block3:hover .back-side {
     transform: scale(1.1);
   }
 
+  .block3.clicked .back-side {
+    transform: rotateY(0); /* Повертаємо на передню сторону при клікові */
+}
 
   .link {
     margin-top: 15px;
@@ -131,13 +167,13 @@ main {
   }
 
   .game_link {
-    color: black;
+    color: var(--color-link);
     text-decoration: none;
     margin-bottom: 100px;
   }
 
   .game_link:hover {
-    background-color: #000000;
+    background-color: var(--color-link);
     border-radius: 30px;
     color: aliceblue;
   }

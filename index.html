@@ -10,10 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1 class="hero_title">Game Market (10-А 2)</h1>
+        <!--background color-->
+        <label for="startColor">Початковий колір: </label>
+    <input type="color" id="startColor" name="startColor">
+
+    <label for="endColor">Кінцевий колір: </label>
+    <input type="color" id="endColor" name="endColor">
+
+    <button class="button" onclick="applyGradient()">Застосувати градієнт</button>
     </header>
     <main>
         <div class="aclass">
@@ -35,18 +44,32 @@
         </section> 
             </section>
         </section>
-          <a class="block3" target="_blank" href="https://daria1284.github.io/GameMarket_Nitskevich/"><article id="Мединський Роман">
+        <article class="block3" id="Мединський Роман">
             <img class="images" src="./images/Мединський.jpg" alt="Мединський Роман">
             <h3 class="name">Мединський Роман</h3>
-            <h4>name</h4>
-          </article></a>
+            <h4>Пригоди козака</h4>
+            <div class="back-side">
+                <img class="images" src="./images/Screenshot 2024-04-22 153503.png" alt="скрін з гри">
+                <p><a class="game_link" target="_blank" href="https://medynskyiroman.github.io/Phaser2ndGame/">game</a></p>
+                <p><a class="game_link" target="_blank" href="https://github.com/MedynskyiRoman/Phaser2ndGame">github</a></p>
+                <p><a class="game_link" target="_blank" href="https://medynskyiroman.github.io/GameMarket_Medynskyi/">GameMarket</a></p>
+                <p><a class="game_link" target="_blank" href="https://forms.gle/MzKxFco9L798EjKi8?authuser=1">опитування</a></p>
+
+            </div>
+          </article>
+          <!--Михальський-->
         <section class="block3" id="Михальський Нікіта">
             <section class="block2"><img class="images" src="./images/Михальський.jpg" alt="Михальський Нікіта">
             <h3 class="name">Михальський Нікіта</h3>
             <h4>Minorun</h4>
-            <a class="game_link" target="_blank" href="https://cement-official.github.io/Minorun/">game</a>
-            <br> <br>
-            <a class="game_link" target="_blank" href="https://github.com/Cement-Official/Minorun">github</a>
+            <div class="back-side">
+                <img class="images" src="./images/Screenshot 2024-04-22 161237.png" alt="скрін з гри">
+                <p><a class="game_link" target="_blank" href="https://cement-official.github.io/Minorun/">game</a></p>
+                <p><a class="game_link" target="_blank" href="https://github.com/Cement-Official/Minorun">github</a></p>
+                <p><a class="game_link" target="_blank" href="https://cement-official.github.io/GameMarket_Myhalskiy/">GameMarket</a></p>
+                <p><a class="game_link" target="_blank" href="https://forms.gle/XVTQaam7Maj2HLCh8">опитування</a></p>
+
+            </div>
             </section>
         </section>
         <section class="block3" id="Недзвецький Олег">
