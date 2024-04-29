@@ -9,7 +9,11 @@ body {
 }
 
 main {
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-self: center;
 }
 
 .button {
@@ -31,12 +35,19 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
+  align-self: center;
 }
 /* information */
 .main_information {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
+    align-self: center;
+}
+
+.ul_aclass {
+  font-size: 100%;
 }
 
 /* images */
@@ -116,8 +127,8 @@ main {
 
   .block3 {
     position: relative;
-    height: 350px;
-    width: 150px;
+    height: 400px;
+    width: 200px;
     margin: 1%;
     border-radius: 30px;
     border: 2px solid #666;
