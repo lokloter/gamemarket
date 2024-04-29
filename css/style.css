@@ -30,6 +30,7 @@ main {
 .main {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 /* information */
 .main_information {
@@ -112,14 +113,11 @@ main {
   flex-direction: row;
 }
 
-  .block {
-    
-  }
 
   .block3 {
     position: relative;
-    height: 17%;
-    width: 20%;
+    height: 350px;
+    width: 150px;
     margin: 1%;
     border-radius: 30px;
     border: 2px solid #666;
