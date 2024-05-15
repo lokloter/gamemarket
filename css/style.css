@@ -31,6 +31,16 @@ main {
   text-align: center;
 }
 
+.button_settings{
+  width: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+.settings_img {
+  width: 100%;
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -207,4 +217,37 @@ main {
 
 .nav_ul {
   list-style-type: none;
+}
+
+
+footer {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+
+}
+
+.img{
+  width: 150px ;
+}
+.prev, .next {
+  display: flex;
+  transform: translateY(-50%);
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.gallery {
+  display: flex;
+  
 }

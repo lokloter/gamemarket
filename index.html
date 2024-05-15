@@ -15,14 +15,18 @@
 <body>
     <header>
         <h1 class="hero_title">Game Market (10-А 2)</h1>
-        <!--background color-->
-        <label for="startColor">Початковий колір: </label>
+        <!--settings-->
+        <button class="button_settings" id="settingsButton"><img class="settings_img" src="./images/settings.png" alt=""></button>
+        <div id="settings" style="display: none;">
+            <!--color-->
+            <label for="startColor">Початковий колір: </label>
     <input type="color" id="startColor" name="startColor">
 
     <label for="endColor">Кінцевий колір: </label>
     <input type="color" id="endColor" name="endColor">
 
     <button class="button" onclick="applyGradient()">Застосувати градієнт</button>
+        </div>
     </header>
     <main>
         <!--класи-->
@@ -197,7 +201,7 @@
         <article class="block3" id="Якубець Денис">
             <img class="images" src="./images/Якубець.jpg" alt="Якубець Денис">
             <h3 class="name">Якубець Денис</h3>
-            <h4>name</h4>
+            <h4>red had vs zombie</h4>
             <div class="back-side">
                 <img class="images" src="./images/Якубець.png" alt="скрін з гри">
                 <p class="p1"><a class="game_link" target="_blank" href="https://d3nis1238.github.io/Phaser-2nd-Game/?authuser=0">game</a></p>
@@ -232,6 +236,19 @@
 
 
     </main>
-    <footer></footer>
+    <footer>
+        <div class="gallery">
+            <div class="slideshow-container">
+                <div id = "mySlides" class="mySlides fade">
+                    
+                </div>
+     
+                <!-- Додайте більше зображень тут -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    
+    </footer>
 </body>
 </html>
