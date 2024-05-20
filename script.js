@@ -65,3 +65,39 @@ function showSlides(n) {
 //   }
   //slides[slideIndex - 1].style.display = "block";
 }
+
+
+
+
+function theRotator() {
+  // Встановлюється прозорість всіх картинок в 0
+  $('div#rotator ul li').css({opacity: 0.0});
+   
+  // беремо першу картинку і показуємо її (по шляху включаємо повну видимість)
+  $('div#rotator ul li:first').css({opacity: 1.0});
+   
+  // викликаємо функцію rotate для запуску слайд шоу, 5000 = зміна картинок відбувається раз в 5 секунд
+  setInterval('rotate()',5000);
+  }
+   
+  function rotate() {
+  // беремо першу картинку
+  var current = ($('div#rotator ul li.show')? $('div#rotator ul li.show') : $('div#rotator ul li:first'));
+   
+  // беремо наступну картинку, коли дійдемо до останньої починаємо з початку
+  var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div#rotator ul li:first') :current.next()) : $('div#rotator ul li:first'));
+   
+  // підключаємо ефект розчинення / загасання для показу картинок, css-класс show має більший z-index
+  next.css({opacity: 0.0})
+  .addClass('show')
+  .animate({opacity: 1.0}, 1000);
+   
+  // ховаємо поточну картинку
+  current.animate({opacity: 0.0}, 1000)
+  .removeClass('show');
+  };
+   
+  $(document).ready(function() {
+  // запускаємо слайд шоу
+  theRotator();
+  });

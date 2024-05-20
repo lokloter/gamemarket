@@ -251,3 +251,14 @@ footer {
   display: flex;
   
 }
+
+.rot {
+  width: 100px;
+}
+
+div#rotator {
+  position:relative;
+ }
+div#rotator ul {margin: 0; }
+div#rotator ul li { position:absolute; list-style: none;}
+div#rotator ul li.show {z-index:-1;}
