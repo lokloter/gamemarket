@@ -1,0 +1,33 @@
+body {
+    width: 460px;;
+}  
+
+content {
+    width: 460px;
+    background: black;
+}
+
+header {
+    width: 100%;
+    background: red;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.hero_title {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main_div {
+    margin: 5px;
+    background-color: bisque;
+    width: 220px;
+    border-radius: 20px;
+}

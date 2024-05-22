@@ -116,6 +116,17 @@ main {
   margin-left: 15px;
 }
 
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pda {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
 .game_link1 {
   color: var(--color-link);
   text-decoration: none;

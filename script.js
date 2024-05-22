@@ -69,35 +69,56 @@ function showSlides(n) {
 
 
 
-function theRotator() {
-  // Встановлюється прозорість всіх картинок в 0
-  $('div#rotator ul li').css({opacity: 0.0});
+// function theRotator() {
+//   // Встановлюється прозорість всіх картинок в 0
+//   $('div#rotator ul li').css({opacity: 0.0});
    
-  // беремо першу картинку і показуємо її (по шляху включаємо повну видимість)
-  $('div#rotator ul li:first').css({opacity: 1.0});
+//   // беремо першу картинку і показуємо її (по шляху включаємо повну видимість)
+//   $('div#rotator ul li:first').css({opacity: 1.0});
    
-  // викликаємо функцію rotate для запуску слайд шоу, 5000 = зміна картинок відбувається раз в 5 секунд
-  setInterval('rotate()',5000);
-  }
+//   // викликаємо функцію rotate для запуску слайд шоу, 5000 = зміна картинок відбувається раз в 5 секунд
+//   setInterval('rotate()',5000);
+//   }
    
-  function rotate() {
-  // беремо першу картинку
-  var current = ($('div#rotator ul li.show')? $('div#rotator ul li.show') : $('div#rotator ul li:first'));
+//   function rotate() {
+//   // беремо першу картинку
+//   var current = ($('div#rotator ul li.show')? $('div#rotator ul li.show') : $('div#rotator ul li:first'));
    
-  // беремо наступну картинку, коли дійдемо до останньої починаємо з початку
-  var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div#rotator ul li:first') :current.next()) : $('div#rotator ul li:first'));
+//   // беремо наступну картинку, коли дійдемо до останньої починаємо з початку
+//   var next = ((current.next().length) ? ((current.next().hasClass('show')) ? $('div#rotator ul li:first') :current.next()) : $('div#rotator ul li:first'));
    
-  // підключаємо ефект розчинення / загасання для показу картинок, css-класс show має більший z-index
-  next.css({opacity: 0.0})
-  .addClass('show')
-  .animate({opacity: 1.0}, 1000);
+//   // підключаємо ефект розчинення / загасання для показу картинок, css-класс show має більший z-index
+//   next.css({opacity: 0.0})
+//   .addClass('show')
+//   .animate({opacity: 1.0}, 1000);
    
-  // ховаємо поточну картинку
-  current.animate({opacity: 0.0}, 1000)
-  .removeClass('show');
-  };
+//   // ховаємо поточну картинку
+//   current.animate({opacity: 0.0}, 1000)
+//   .removeClass('show');
+//   };
    
-  $(document).ready(function() {
-  // запускаємо слайд шоу
-  theRotator();
-  });
+//   // $(document).ready(function() {
+//   // // запускаємо слайд шоу
+//   // theRotator();
+//   // });
+
+document.addEventListener('DOMContentLoaded', function () {
+const links = [
+  { url: 'https://lokloter.github.io/Gamemarket-10A-1/', img: 'images/Screenshot 2024-04-22 153503.png' },
+  { url: 'https://lokloter.github.io/Gamemarket-10A-1/', img: 'images/Якубець.jpg' },
+  { url: 'https://lokloter.github.io/Gamemarket-10A-1/', img: 'images/Михальський.jpg' }
+];
+
+// Вибираємо випадкове посилання
+const randomIndex = Math.floor(Math.random() * links.length);
+const randomLink = links[randomIndex];
+
+// Змінюємо атрибути посилання та зображення
+const linkElement = document.getElementById('random-link');
+const imageElement = document.getElementById('random-image');
+
+linkElement.href = randomLink.url;
+imageElement.src = randomLink.img;
+imageElement.alt = 'Random Image';
+});
+
